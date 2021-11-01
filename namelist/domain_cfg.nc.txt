@@ -1,0 +1,61 @@
+netcdf domain_cfg {
+dimensions:
+	x = 1458 ;
+	y = 1345 ;
+	z = 51 ;
+	t = UNLIMITED ; // (1 currently)
+variables:
+	float nav_lon(y, x) ;
+	float nav_lat(y, x) ;
+	float nav_lev(z) ;
+	double time_counter(t) ;
+	int jpiglo ;
+	int jpjglo ;
+	int jpkglo ;
+	int jperio ;
+	int ln_zco ;
+	int ln_zps ;
+	int ln_sco ;
+	int ln_isfcav ;
+	double hbatt(t, y, x) ;
+	double rn_wd_ref_depth ;
+	double ht_wd(t, y, x) ;
+	double glamt(t, y, x) ;
+	double glamu(t, y, x) ;
+	double glamv(t, y, x) ;
+	double glamf(t, y, x) ;
+	double gphit(t, y, x) ;
+	double gphiu(t, y, x) ;
+	double gphiv(t, y, x) ;
+	double gphif(t, y, x) ;
+	double e1t(t, y, x) ;
+	double e1u(t, y, x) ;
+	double e1v(t, y, x) ;
+	double e1f(t, y, x) ;
+	double e2t(t, y, x) ;
+	double e2u(t, y, x) ;
+	double e2v(t, y, x) ;
+	double e2f(t, y, x) ;
+	double ff_f(t, y, x) ;
+	double ff_t(t, y, x) ;
+	double e3t_1d(t, z) ;
+	double e3w_1d(t, z) ;
+	double e3t_0(t, z, y, x) ;
+	double e3u_0(t, z, y, x) ;
+	double e3v_0(t, z, y, x) ;
+	double e3f_0(t, z, y, x) ;
+	double e3w_0(t, z, y, x) ;
+	double e3uw_0(t, z, y, x) ;
+	double e3vw_0(t, z, y, x) ;
+	double gdept_1d(t, z) ;
+	double gdepw_1d(t, z) ;
+	double gdept_0(t, z, y, x) ;
+	double gdepw_0(t, z, y, x) ;
+	int bottom_level(t, y, x) ;
+	int top_level(t, y, x) ;
+	double stiffness(t, y, x) ;
+
+// global attributes:
+		:file_name = "domain_cfg.nc" ;
+		:TimeStamp = "01/11/2021 16:56:58 +0000" ;
+}
